@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="contenedor">
+            <section class="contenedor_principal">
+                <img id="logo" src="./source/Logol.png" alt="">
+                <div class="contenedor_texto">
+                    <textarea placeholder="Ingrese el texto aqui"></textarea>
+                    <div id="informacion">
+                        <img src="./source/bi_exclamation-circle-fill.png">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <button id="btn_encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="btn_claro" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="contenedor_encriptado">
+                <div class="inicial_encriptar" id="inicial_encriptar" >
+                    <img id="muneco" src="./source/Muñeco.png" alt="">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p class="texto_inicial">ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="hidden" id="final_encriptar">
+                    <p id="texto_encriptado"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus
+                        scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget
+                        fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+                    <button  class="btn_claro " id="copiar" onclick="copiarContenido()">Copiar</button>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
